@@ -1,6 +1,0 @@
-node_modules
-dist
-tmp
-*.log
-.nyc_output
-coverage.lcov
