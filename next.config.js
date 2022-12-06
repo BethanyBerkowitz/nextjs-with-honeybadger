@@ -1,6 +1,8 @@
 // Use the hidden-source-map option when you don't want the source maps to be
 // publicly available on the servers, only to the error reporting
-const HoneybadgerSourceMapPlugin = require('@honeybadger-io/webpack')
+// const HoneybadgerSourceMapPlugin = require('@honeybadger-io/webpack')
+const HoneybadgerSourceMapPlugin = require('./webpack-plugin-test/dist/HoneybadgerSourceMapPlugin')
+
 const { execSync } = require('child_process');
 
 // Use the HoneybadgerSourceMapPlugin to upload the source maps during build step
@@ -42,6 +44,7 @@ module.exports = {
           apiKey: HONEYBADGER_API_KEY,
           assetsUrl: HONEYBADGER_ASSETS_URL,
           revision: HONEYBADGER_REVISION,
+          removeSourcemaps: true
         })
       )
     }
