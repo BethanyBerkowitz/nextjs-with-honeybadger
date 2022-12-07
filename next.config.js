@@ -43,7 +43,7 @@ module.exports = {
           apiKey: HONEYBADGER_API_KEY,
           assetsUrl: HONEYBADGER_ASSETS_URL,
           revision: HONEYBADGER_REVISION,
-          removeSourcemaps: false
+          removeSourcemaps: true
         })
       )
     }
