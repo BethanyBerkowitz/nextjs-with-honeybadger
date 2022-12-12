@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@honeybadger-io/js": "^3.2.0",
-    "@honeybadger-io/webpack": "file:honeybadger-io-webpack-4.7.5.tgz",
+    "@honeybadger-io/webpack": "^4.7.5",
     "next": "latest",
     "react": ">= 17.0.1",
     "react-dom": ">= 17.0.1"
